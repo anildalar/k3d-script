@@ -19,7 +19,6 @@ apt-get install -y ca-certificates curl gnupg lsb-release
 # -------------------------------
 # 3. Docker Install
 # -------------------------------
-apt-get remove -y docker docker-engine docker.io containerd runc || true
 
 install -m 0755 -d /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | \
