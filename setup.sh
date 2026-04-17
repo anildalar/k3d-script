@@ -95,6 +95,7 @@ kubectl wait --namespace cert-manager \
 
 echo "✅ Verifying setup..."
 
+kubectl get all -A
 kubectl get nodes
 kubectl get pods -A
 kubectl get svc -A
