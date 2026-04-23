@@ -95,9 +95,11 @@ kubectl wait --namespace cert-manager \
 
 echo "✅ Verifying setup..."
 
+snap install helm --classic
+
 kubectl get all -A
 kubectl get nodes
 kubectl get pods -A
 kubectl get svc -A
 
-echo "🎉 DONE: Cluster + Ingress + Cert-Manager Ready!"
+echo "🎉 DONE: Cluster + Ingress + Cert-Manager Ready + Helm!"
